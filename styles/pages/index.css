@@ -14,24 +14,10 @@ nav {
   padding: 0 15%;
   height: 75px;
   line-height: 75px;
-  background: #667272;
-}
-nav .navbar-toggler {
-  display: 0;
-  height: -moz-min-content;
-  height: min-content;
-  cursor: pointer;
-}
-nav .navbar-toggler .bar {
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background: #ffffff;
-  border-radius: 10%;
-  transition: 0.4s;
+  background: #3C2222;
 }
 nav .navbar-logo {
-  color: #e30d0d;
+  color: #c6a3a3;
   font-size: 28px;
   font-weight: bold;
 }
@@ -45,10 +31,10 @@ nav .nav-list .nav-item {
   transition: 0.4s;
 }
 nav .nav-list .nav-item:hover {
-  background: #8c2ca9;
+  background: #664545;
 }
 nav .nav-list .nav-link {
-  color: #50a22b;
+  color: #D9D9D9;
   font-size: 18px;
   font-weight: 500;
 }
@@ -61,11 +47,15 @@ nav .nav-list .nav-link {
     padding: 0 20px;
   }
 }
+input {
+  display: none;
+}
+
 @media screen and (max-width: 630px) {
   nav .nav-list {
     display: grid;
     position: absolute;
-    background: #e30d0d;
+    background: #c6a3a3;
     width: 100%;
     top: 75px;
     left: 0;
@@ -75,6 +65,12 @@ nav .nav-list .nav-link {
   }
   nav .nav-list .nav-item {
     padding-left: 35px;
+  }
+  nav .nav-list .nav-item:active {
+    background: #f6dbdb;
+  }
+  nav .nav-list .nav-link {
+    color: #3C2222;
   }
   nav .navbar-toggler {
     display: grid;
@@ -87,28 +83,24 @@ nav .nav-list .nav-link {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background: #ffffff;
+    background: #c6a3a3;
     border-radius: 10%;
     transition: 0.4s;
   }
-}
-input {
-  display: none;
-}
-
-input:checked ~ nav .nav-list {
-  transform: translateY(0);
-}
-input:checked ~ nav .navbar-toggler {
-  margin-top: 35px;
-}
-input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-  position: absolute;
-  transform: rotate(45deg);
-}
-input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-  display: none;
-}
-input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-  transform: rotate(-45deg);
+  input:checked ~ nav .nav-list {
+    transform: translateY(0);
+  }
+  input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+  }
+  input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+  }
+  input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
 }/*# sourceMappingURL=index.css.map */

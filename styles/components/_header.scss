@@ -1,6 +1,7 @@
 @import "../defaults/breakpoints";
+@import "../defaults/colors";
 
-* {
+ *{
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,28 +17,10 @@ nav {
     padding: 0 15%; 
     height: 75px;
     line-height: 75px;
-    background: #667272;
-
-        .navbar-toggler {
-            display: 0;
-            height: min-content;
-            cursor: pointer;
-
-                .bar {
-                    width: 40px;
-                    height: 5px;
-                    margin-bottom: 10px;
-                    background: #ffffff;
-                    border-radius: 10%;
-                    transition: .4s;
-                }
-        }
-    
-
-
+    background: $primary-background;
 
     .navbar-logo {
-        color: #e30d0d;
+        color: $sec_text;
         font-size: 28px;
         font-weight: bold;
     }
@@ -52,12 +35,12 @@ nav {
             transition: .4s;
 
             &:hover {
-                background: #8c2ca9;
+                background: $hover;
             }
         }
 
         .nav-link {
-            color: #50a22b;
+            color: $primary_text;
             font-size: 18px;
             font-weight: 500;
         }
@@ -67,21 +50,23 @@ nav {
 @media screen and (max-width: $tablet) {
     nav {
         padding: 0 2rem;
-        
+
         .nav-list .nav-item {
                 padding: 0 20px;
         }
     }
 }
 
+input {
+    display: none;
+}
+
 @media screen and (max-width: $mobile) {
     nav {
-
-
         .nav-list {
             display: grid; 
             position: absolute;
-            background: #e30d0d;
+            background: $sec_text;
             width: 100%;
             top: 75px;
             left: 0;
@@ -91,6 +76,14 @@ nav {
         
             .nav-item {
                 padding-left: 35px;
+
+                &:active {
+                    background: $mob_hover;
+                }
+            }
+
+            .nav-link {
+                color: $primary-background;
             }
         }
         .navbar-toggler {
@@ -102,34 +95,29 @@ nav {
                         width: 40px;
                         height: 5px;
                         margin-bottom: 10px;
-                        background: #ffffff;
+                        background: $sec_text;
                         border-radius: 10%;
                         transition: .4s;
                     }
             }
-
         }
-    }        
 
-input {
-    display: none;
-}
-
-input:checked ~ nav {
-    .nav-list {
-         transform: translateY(0);
-    }
-    .navbar-toggler {
-        margin-top: 35px;
-        .bar:nth-child(1) {
-            position: absolute;
-            transform: rotate(45deg);
+    input:checked ~ nav {
+        .nav-list {
+            transform: translateY(0);
         }
-        .bar:nth-child(2) {
-            display: none;
-        }
-        .bar:nth-child(3) {
-            transform: rotate(-45deg);
+        .navbar-toggler {
+            margin-top: 35px;
+            .bar:nth-child(1) {
+                position: absolute;
+                transform: rotate(45deg);
+            }
+            .bar:nth-child(2) {
+                display: none;
+            }
+            .bar:nth-child(3) {
+                transform: rotate(-45deg);
+            }
         }
     }
 }

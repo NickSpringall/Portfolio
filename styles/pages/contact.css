@@ -1,1 +1,106 @@
-/*# sourceMappingURL=contact.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  height: 75px;
+  line-height: 75px;
+  background: #3C2222;
+}
+nav .navbar-logo {
+  color: #c6a3a3;
+  font-size: 28px;
+  font-weight: bold;
+}
+nav .nav-list {
+  display: flex;
+}
+nav .nav-list .nav-item {
+  cursor: pointer;
+  height: 100%;
+  padding: 0 30px;
+  transition: 0.4s;
+}
+nav .nav-list .nav-item:hover {
+  background: #664545;
+}
+nav .nav-list .nav-link {
+  color: #D9D9D9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 0 2rem;
+  }
+  nav .nav-list .nav-item {
+    padding: 0 20px;
+  }
+}
+input {
+  display: none;
+}
+
+@media screen and (max-width: 630px) {
+  nav .nav-list {
+    display: grid;
+    position: absolute;
+    background: #c6a3a3;
+    width: 100%;
+    top: 75px;
+    left: 0;
+    transform: translateY(-100%);
+    z-index: -1;
+    transition: 0.6s;
+  }
+  nav .nav-list .nav-item {
+    padding-left: 35px;
+  }
+  nav .nav-list .nav-item:active {
+    background: #f6dbdb;
+  }
+  nav .nav-list .nav-link {
+    color: #3C2222;
+  }
+  nav .navbar-toggler {
+    display: grid;
+    height: -moz-min-content;
+    height: min-content;
+    cursor: pointer;
+    margin: 18px -10px 0 0;
+  }
+  nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #c6a3a3;
+    border-radius: 10%;
+    transition: 0.4s;
+  }
+  input:checked ~ nav .nav-list {
+    transform: translateY(0);
+  }
+  input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+  }
+  input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+  }
+  input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}/*# sourceMappingURL=contact.css.map */
