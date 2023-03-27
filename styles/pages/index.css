@@ -61,7 +61,7 @@ nav .nav-list .nav-link {
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 630px) {
   nav .nav-list {
     display: grid;
     position: absolute;
