@@ -1,0 +1,213 @@
+@import "../defaults/breakpoints";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%; 
+    height: 75px;
+    line-height: 75px;
+    background: #667272;
+
+        .navbar-toggler {
+            display: 0;
+            height: min-content;
+            cursor: pointer;
+
+                .bar {
+                    width: 40px;
+                    height: 5px;
+                    margin-bottom: 10px;
+                    background: #ffffff;
+                    border-radius: 10%;
+                    transition: .4s;
+                }
+        }
+    
+
+
+
+    .navbar-logo {
+        color: #e30d0d;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .nav-list {
+        display: flex;
+
+        .nav-item {
+            cursor: pointer;
+            height: 100%;
+            padding: 0 30px;
+            transition: .4s;
+
+            &:hover {
+                background: #8c2ca9;
+            }
+        }
+
+        .nav-link {
+            color: #50a22b;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    nav {
+        padding: 0 2rem;
+        
+        .nav-list .nav-item {
+                padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    nav {
+
+
+        .nav-list {
+            display: grid; 
+            position: absolute;
+            background: #e30d0d;
+            width: 100%;
+            top: 75px;
+            left: 0;
+            transform: translateY(-100%);
+            z-index: -1;
+            transition: .6s;
+        
+            .nav-item {
+                padding-left: 35px;
+            }
+        }
+        .navbar-toggler {
+                display: grid;
+                height: min-content;
+                cursor: pointer;
+                margin: 18px -10px 0 0;
+                    .bar {
+                        width: 40px;
+                        height: 5px;
+                        margin-bottom: 10px;
+                        background: #ffffff;
+                        border-radius: 10%;
+                        transition: .4s;
+                    }
+            }
+
+        }
+    }        
+
+input {
+    display: none;
+}
+
+input:checked ~ nav {
+    .nav-list {
+         transform: translateY(0);
+    }
+    .navbar-toggler {
+        margin-top: 35px;
+        .bar:nth-child(1) {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        .bar:nth-child(2) {
+            display: none;
+        }
+        .bar:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+
+
+
+
+// header {
+//     width:250px;
+
+//     .nav-items {
+//         display: flex;
+//         flex-direction: column;
+//         padding-top: 80px;
+//         padding-left: 40px;
+        
+//     background-color: #3C2253;
+
+//     .active {
+//         font-weight: lighter;
+//         color: #9f9c9c;
+//     }
+        
+//         a {
+//             font-family: 'IBM Plex Sans Condensed', sans-serif;
+//             text-decoration: none;
+//             font-size: 28px;
+//             color: #FFFFFF;
+//             padding: 16px;
+            
+
+//             &:hover {
+//                 font-weight:bolder;
+//                 border: solid black 1px;
+//                 padding-left: none;
+//             }
+
+//         }
+//     }
+// }
+
+// @media screen and (max-width:$tablet) {
+//     header {
+//         display: flex;
+//         width: auto;
+
+//         .nav-items {
+//             width: 100%;
+//             padding: 12px;
+//             display: flex;
+//             flex-direction: row;
+//             background-color: #3C2253;
+//             font-size: 12px;
+//         }
+//     }
+// }
+
+// @media screen and (max-width:$mobile) {
+//     header {
+//         width:200px;
+
+//         .nav-items {
+//             display: grid;
+//             position: absolute;
+//             background: #393382;
+//             width: 100%;
+//             top: 75px;
+//             left: 0;
+//             transform: translateY(-100%);
+//             z-index: -1;
+//             transition: .6s;
+
+//             padding-left: 35px;
+
+
+
+//         }
+//     }
+// }
+    
