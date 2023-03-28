@@ -1,11 +1,19 @@
 * {
+  background-color: none;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-family: "ibm plex sans condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "ibm plex sans condensed", sans-serif;
 }
 
 nav {

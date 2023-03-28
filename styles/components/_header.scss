@@ -1,17 +1,20 @@
 @import "../defaults/breakpoints";
 @import "../defaults/colors";
-
- *{
+@import "../components/utils";
+    
+* {
+    @include primary_background();
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-family: 'ibm plex sans condensed', sans-serif;
 }
+    
+    nav {
 
-nav {
     display: flex;
     justify-content: space-between;
     padding: 0 15%; 
@@ -121,3 +124,4 @@ input {
         }
     }
 }
+
