@@ -1,8 +1,9 @@
 @import "../components/header";
-@import "../defaults/colors";
 @import "../components/footer";
+@import "../defaults/colors";
 @import "../components/utils";
 
 .page_layout {
     @include page_layout();
+    height: 2000px;
 }

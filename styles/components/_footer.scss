@@ -10,8 +10,8 @@ footer {
     position: sticky; 
     bottom: 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr 3fr 1fr;
-    grid-template-rows: 40px;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-rows: 42px;
     background-color: $primary_background;
     
     .prof_links_box {
@@ -31,7 +31,7 @@ footer {
     .professional_links {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         grid-column: 2;
     }
 
@@ -81,4 +81,12 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    footer {
+        position: relative;
+        grid-template-columns: 1fr 5fr 5fr 1fr;
+    }
+}
+
 

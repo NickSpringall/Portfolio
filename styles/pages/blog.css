@@ -122,4 +122,91 @@ input {
   input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     transform: rotate(-45deg);
   }
+}
+* {
+  background-color: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "ibm plex sans condensed", sans-serif;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-rows: 42px;
+  background-color: #3C2222;
+}
+footer .prof_links_box {
+  background: none;
+  padding: 12px;
+  border: 0px solid;
+  border-radius: 0px;
+  transition: 0.4s;
+  overflow: visible;
+}
+footer .prof_links_box:hover {
+  cursor: pointer;
+  background: #664545;
+}
+footer .professional_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2;
+}
+footer .call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 3;
+}
+footer .call .box {
+  border: solid 1px #987d7d;
+  padding: 4px 20px;
+  transition: 0.4s;
+}
+footer .call .box:hover {
+  cursor: pointer;
+  background: #664545;
+}
+footer .call .phone_number {
+  color: #c6a3a3;
+}
+footer .call .call_text {
+  font-size: 12px;
+  position: relative;
+  bottom: 2px;
+}
+
+@media screen and (max-width: 630px) {
+  footer {
+    position: relative;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
+  footer .call .box {
+    padding: 12px;
+    border: none;
+  }
+  footer .call .box .call_text {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    position: relative;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+  }
+}
+.page_layout {
+  background: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=blog.css.map */
