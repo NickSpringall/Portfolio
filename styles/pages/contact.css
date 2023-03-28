@@ -18,6 +18,7 @@ nav {
   background: #3C2222;
 }
 nav .navbar-logo {
+  color: #c6a3a3;
   font-size: 28px;
   font-weight: bold;
 }
@@ -90,6 +91,7 @@ input {
   }
   nav .navbar-toggler {
     display: grid;
+    z-index: 3;
     left: 8px;
     height: -moz-min-content;
     height: min-content;
@@ -97,11 +99,10 @@ input {
     margin: 18px 30px 0 0;
   }
   nav .navbar-toggler .bar {
-    z-index: 3;
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background: black;
+    background: #c6a3a3;
     border-radius: 10%;
     transition: 0.4s;
   }

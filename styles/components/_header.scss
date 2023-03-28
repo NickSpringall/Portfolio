@@ -15,7 +15,7 @@
     background: $primary-background;
 
     .navbar-logo {
-        // color: $sec_text;
+        color: $sec_text;
         font-size: 28px;
         font-weight: bold;
     }
@@ -60,8 +60,6 @@ input {
 
 @media screen and (max-width: $mobile) {
     nav {
-        // position:relative;
-        // z-index: 4;
         padding: 0 0;
 
         .navbar-logo {
@@ -102,17 +100,16 @@ input {
         }
         .navbar-toggler {
                 display: grid;
+                z-index: 3;
                 left: 8px;
                 height: min-content;
                 cursor: pointer;
                 margin: 18px 30px 0 0;
                     .bar {
-                        z-index: 3;
                         width: 40px;
                         height: 5px;
                         margin-bottom: 10px;
-                        // background: $sec_text;
-                        background: black;
+                        background: $sec_text;
                         border-radius: 10%;
                         transition: .4s;
                     }
