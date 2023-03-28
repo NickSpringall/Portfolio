@@ -160,14 +160,27 @@ footer .call .box:hover {
 footer .call .phone_number {
   color: #c6a3a3;
 }
-footer .call #call_text {
+footer .call .call_text {
   font-size: 12px;
   position: relative;
   bottom: 2px;
 }
 
+@media screen and (max-width: 630px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+  }
+  footer .call .box {
+    padding: 12px;
+    border: none;
+  }
+  footer .call .box .call_text {
+    display: none;
+  }
+}
 .placeholder {
   display: flex;
-  height: 2000px;
-  width: auto;
+  min-height: calc(100vh - 115px);
 }/*# sourceMappingURL=index.css.map */

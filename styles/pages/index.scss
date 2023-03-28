@@ -4,8 +4,8 @@
 
 .placeholder {
     display: flex;
-    height: 2000px;
-    width: auto;
+    min-height: calc(100vh - 115px);
+    // height:2000px;
 }
 
 
