@@ -75,7 +75,7 @@ input {
             z-index: 2;
             background: $primary-background;
             height: 75px;
-            width: 120%;
+            width: 100%;
         }
         .nav-list {
             display: grid; 
@@ -105,7 +105,7 @@ input {
                 left: 8px;
                 height: min-content;
                 cursor: pointer;
-                margin: 18px -10px 0 0;
+                margin: 18px 30px 0 0;
                     .bar {
                         z-index: 3;
                         width: 40px;
