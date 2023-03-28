@@ -1,13 +1,8 @@
 @import "../components/header";
 @import "../components/footer";
 @import "../defaults/colors";
+@import "../components/utils";
 
 .page_layout {
-    background: none;
-    z-index: -2;
-    min-height: 100vh;
-    // height: 2000px;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
+    @include page_layout();
 }

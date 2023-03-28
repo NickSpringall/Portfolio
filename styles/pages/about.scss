@@ -1,2 +1,8 @@
 @import "../components/header";
 @import "../defaults/colors";
+@import "../components/footer";
+@import "../components/utils";
+
+.page_layout {
+    @include page_layout();
+}

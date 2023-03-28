@@ -199,7 +199,6 @@ footer .call .call_text {
 }
 .page_layout {
   background: none;
-  z-index: -2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
