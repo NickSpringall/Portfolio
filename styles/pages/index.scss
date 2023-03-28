@@ -1,11 +1,13 @@
 @import "../components/header";
-// @import "../components/footer";
+@import "../components/footer";
 @import "../defaults/colors";
 
-.placeholder {
-    display: flex;
-    min-height: calc(100vh - 115px);
-    // height:2000px;
+.page_layout {
+    background: none;
+    z-index: -2;
+    min-height: 100vh;
+    // height: 2000px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
 }
-
-
