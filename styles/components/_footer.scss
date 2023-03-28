@@ -1,0 +1,72 @@
+@import "./utils";
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+
+* {
+    @include primary_background();
+}
+
+footer {
+    position:sticky; bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 3fr 1fr;
+    grid-template-rows: 40px;
+    background-color: $primary_background;
+    
+    .prof_links_box {
+        background: none;
+        padding: 12px;
+        border: 0px solid;
+        border-radius: 0px;
+        transition: .4s;
+        overflow: visible;
+
+        &:hover {
+            cursor: pointer;
+            background: $hover;
+        }
+
+    }
+    .professional_links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        grid-column: 2;
+
+        
+    }
+
+    .call {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 3;
+
+        .box {
+            border: solid 1px $border;
+            padding: 4px 20px;
+            transition: .4s;
+            
+
+            &:hover {
+                cursor: pointer;
+                background: $hover;
+            }
+        }
+        
+        .phone_number {
+            color: $sec_text;
+        }
+
+        #call_text {
+            font-size: 12px;
+            position: relative;
+            bottom: 2px;
+            
+
+        }
+    }
+}
+
+
+

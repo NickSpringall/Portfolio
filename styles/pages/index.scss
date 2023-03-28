@@ -1,3 +1,11 @@
 @import "../components/header";
+@import "../components/footer";
 @import "../defaults/colors";
+
+.placeholder {
+    display: flex;
+    height: 2000px;
+    width: auto;
+}
+
 
