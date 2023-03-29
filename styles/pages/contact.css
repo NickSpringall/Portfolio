@@ -375,4 +375,19 @@ main .notebook .form_cont .send_button #send:hover {
     position: absolute;
     height: 550px;
   }
+}
+@media screen and (max-width: 630px) {
+  main {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  main .notebook {
+    right: 35%;
+  }
+  main h1 {
+    margin-left: 5px;
+  }
+  main h2 {
+    margin-left: 5px;
+  }
 }/*# sourceMappingURL=contact.css.map */
