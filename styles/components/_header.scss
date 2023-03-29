@@ -9,15 +9,41 @@
     nav {
     display: flex;
     justify-content: space-between;
-    padding: 0 15%; 
+    padding: 0 5%;
     height: 75px;
     line-height: 75px;
     background: $primary-background;
 
     .navbar-logo {
         color: $sec_text;
-        font-size: 28px;
         font-weight: bold;
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 50px 10px;
+        transition: 0.4s;
+        line-height: 0;
+
+        .name {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: lighter;
+            grid: 1;
+            color: $primary_text;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: lighter;
+            grid: 2;
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        &:hover {
+            background: $hover !important;
+            cursor: pointer; 
+        }
     }
 
     .nav-list {
@@ -44,10 +70,19 @@
 
 @media screen and (max-width: $tablet) {
     nav {
-        padding: 0 2rem;
+        padding: 0 1rem;
+
+        .navbar-logo {
+            .name {
+                font-size: 18px;
+            }
+            .title {
+                font-size: 14px;
+            }
+        }
 
         .nav-list .nav-item {
-                padding: 0 20px;
+                padding: 0 1rem;
         }
     }
 }

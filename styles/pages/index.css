@@ -12,15 +12,38 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 15%;
+  padding: 0 5%;
   height: 75px;
   line-height: 75px;
   background: #3C2222;
 }
 nav .navbar-logo {
   color: #c6a3a3;
-  font-size: 28px;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 50px 10px;
+  transition: 0.4s;
+  line-height: 0;
+}
+nav .navbar-logo .name {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: lighter;
+  grid: 1;
+  color: #D9D9D9;
+}
+nav .navbar-logo .title {
+  font-size: 18px;
+  font-weight: lighter;
+  grid: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+nav .navbar-logo:hover {
+  background: #664545 !important;
+  cursor: pointer;
 }
 nav .nav-list {
   display: flex;
@@ -42,10 +65,16 @@ nav .nav-list .nav-link {
 
 @media screen and (max-width: 1000px) {
   nav {
-    padding: 0 2rem;
+    padding: 0 1rem;
+  }
+  nav .navbar-logo .name {
+    font-size: 18px;
+  }
+  nav .navbar-logo .title {
+    font-size: 14px;
   }
   nav .nav-list .nav-item {
-    padding: 0 20px;
+    padding: 0 1rem;
   }
 }
 input {
