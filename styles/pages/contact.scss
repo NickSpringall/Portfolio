@@ -126,3 +126,46 @@ main {
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    main {
+        display:grid;
+        height: auto;
+        grid-template-rows: 1fr 1fr 1fr 1.5fr 10fr;
+        grid-template-columns: .5fr .5fr 3fr 2fr 3fr 3fr 1fr;
+
+        .notebook {
+            grid-row: 5;
+            grid-column: 3 / 7;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            grid-row: 3;
+            grid-column: 3;
+            position:absolute;
+          
+
+        }
+        H2 {
+            grid-row: 4;
+            grid-column: 2 / 5;
+            position: absolute;
+            font-size: 12px;
+        }
+
+        .coffee_img {
+            grid-row: 1;
+            grid-column: 5;
+            position: absolute;
+        }
+
+        .background_box {
+            grid-row: 2;
+            grid-column: 1;
+            position: absolute;
+            height: 550px;
+        }
+    }
+
+}
