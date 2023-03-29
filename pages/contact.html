@@ -13,10 +13,13 @@
 <body>
     <container class="page_layout">
         <header>
-            <input type="checkbox" id="toggle">
+            <input style=display:none; type="checkbox" id="toggle">
 
             <nav>
-                <a class="navbar-logo" href="#">LOGO</a>
+                <a class="navbar-logo" href="#">
+                    <div class="name">NICK SPRINGALL</div>
+                    <div class="title">web developer</div>
+                </a>
                 <div class="list_cover"></div>
 
            
@@ -51,7 +54,46 @@
     </header>
     
 <main> 
-    <div class="placeholder"></div>
+    <h1>GET IN TOUCH</h1>
+    <h2>I'm looking forward to hearing from you</h2>
+
+    <div class="background_box"></div>
+
+    <div class="coffee_img">
+        <img src="../styles/components/images/coffee.jpg" alt="">
+    </div>
+
+    <div class="notebook">
+        <img src="../styles/components/images/notebook_no_border.png" alt="">
+    
+        <form class="form_cont">
+            
+            <div class="form_elements">
+                <label for="name">NAME: </label>
+                <input class="form_input" type="text" id="name" required>
+            </div> 
+
+            <div class="form_elements">
+                <label for="email">EMAIL: </label>
+                <input class="form_input" type="text" id="email" required>
+            </div>
+
+            <div class="form_elements">
+                <label for="phone">PHONE: </label>
+                <input class="form_input" type="tel" id="phone">
+            </div> 
+
+            <div class="form_elements">
+                <label for="message">MESSAGE: </label>
+                <textarea class="form_input" class="message_size" type="text" id="message" required></textarea>
+            </div>
+
+            <div class="send_button">
+                <button id="send">SEND</button>
+            </div>
+        </form>
+    </div>
+
 </main>
 
 <footer>
@@ -94,7 +136,6 @@
     </span>
     
 </footer>
-
 </container>
 </body>
 </html>

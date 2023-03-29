@@ -6,3 +6,123 @@
 .page_layout {
     @include page_layout();
 }
+
+main {
+    display:grid;
+    height: auto;
+    padding-top: 30px;
+    grid-template-columns: .5fr 1fr .5fr 4fr 8fr;
+    grid-template-rows: 1rem 2rem 2.4rem 3rem 3rem 10rem 10rem 2rem;
+
+    h1 {
+        grid-column: 2;
+        grid-row: 3;
+        position: absolute;
+        font-size: 32px;
+        font-weight: lighter;
+        color: $primary_text;
+    }
+
+    h2 {
+        grid-column: 4;
+        grid-row: 4;
+        position: absolute;
+        font-size: 16px;
+        color: $primary_text;
+    }
+
+    .background_box {
+        background-color: $primary-background;
+        position:absolute;
+        width: 100%;
+        height: 450px;
+        grid-column: 1;
+        grid-row: 2;
+        z-index: -1;
+    }
+
+    .coffee_img {
+        img{
+            width:100%;
+            height: auto;
+        }
+        position:absolute;
+        grid-column: 3;
+        grid-row: 5;
+        height: auto;
+        width: 300px;
+        }
+
+    .notebook {
+        img {
+            height: 500px;
+            width: 500px;    
+        }
+
+        grid-column: 5;
+        grid-row: 1;
+        height: 500px;
+        width: 500px;
+        background-color: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .form_cont {
+            position:absolute;
+            display: flex;
+            flex-direction: column;
+            left:283px;
+            top:77px;
+            padding: 5px;
+            border: solid 1px black;
+            height: 370px;
+            width: 196px;
+
+            .form_elements {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+
+                label {
+                    padding: 4px;
+                    left:50px;
+                    font-size: 16px;
+                    color: $primary_background;
+                }
+
+                .form_input {
+                    opacity: .7;
+                    border: solid 1px black;
+                    font-size:18px;
+                    transition: .4s;
+
+                    &:focus {
+                        background-color: $sec_text;
+                    }
+                }
+
+                textarea {
+                    height:150px;
+                }
+            }
+            .send_button {
+                padding-top: 6px;
+
+                #send {
+                    height: 24px;
+                    min-width: 196px;
+                    border: solid 1px $primary_background;
+                    font-size: 16px;
+                    background-color: $primary-text;
+                    transition: .4s;
+
+                    &:hover {
+                        background-color: $sec_text;
+                    }
+                }
+            }
+        }
+    }
+}
