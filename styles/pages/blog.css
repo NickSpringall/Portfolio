@@ -262,6 +262,9 @@ main .blog_post_cont:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
+main .blog_post_cont:hover .blog_post {
+  background-color: #664b45;
+}
 main .blog_post_cont .blog_img {
   position: relative;
   grid-row: 4/span 2;
@@ -305,7 +308,7 @@ main .blog_post_cont h3 {
 }
 @media screen and (max-width: 630px) {
   main .blog_links .blog_post_cont {
-    width: 400px;
+    width: 350px;
     height: 180px;
     margin: 20px;
   }

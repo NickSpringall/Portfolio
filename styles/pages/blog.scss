@@ -32,9 +32,12 @@ main {
         transition: .4s;
 
 
-        &:hover {
+        &:hover{
             transform: scale(1.05);
             cursor: pointer;
+            .blog_post {
+                background-color: $hover;
+            }
         }
 
 
@@ -57,6 +60,7 @@ main {
             background-color: $primary-background;
             border: solid 1px;
             border-radius: 4px;
+
         }
 
         h2 {
@@ -88,7 +92,7 @@ main {
 
 @media screen and (max-width: $mobile) {
     main .blog_links .blog_post_cont {
-        width: 400px;
+        width: 350px;
         height: 180px;
         margin: 20px;
     }
