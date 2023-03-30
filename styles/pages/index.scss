@@ -129,7 +129,18 @@
 
 @media screen and (max-width: $mobile) {
     .homepage_layout {
-        padding-top: 0;
-        grid-template-rows: 12% 58% 18% 7% 5%;;
+        padding-top: 10px;
+
+        .main_background_box .headings {
+        width:100%;
+        margin-top: 0px;
+        grid-row: 4 / span 5;
+
+        .sub {
+            margin-left: 51%;
+        }
+        }
+
+        
     }
 }
