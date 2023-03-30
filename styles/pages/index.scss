@@ -6,3 +6,130 @@
 .page_layout {
     @include page_layout();
 }
+
+.homepage_layout {
+    height:500px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 11fr 12fr 1fr;
+    grid-template-rows: 12% 58% 18% 7% 5%;
+}
+
+.main_background_box {
+    background-color: $primary-text;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+  
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 5;
+
+    .headings {
+        margin-top: 6%;
+        height:150px;
+        width:45%;
+
+        .hi {
+            font-size: 40px;
+        }
+
+        .sub {
+            margin-left: 25px;
+            font-weight: lighter;
+        }
+    }
+}
+
+.sec_background_box {
+    background-color: $primary-background;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 2;
+
+    .project {
+        height: 100px;
+        width: 47%;
+        display: block;
+
+        .question {
+        margin-left:10%;
+        margin-top:12px;
+        font-size: 20px;
+        font-weight: lighter;
+        color: $primary-text;
+        }
+
+        .contact_btn_position {
+        margin-left:67%;
+        margin-top: 5%;
+        
+
+            .contact_btn {
+                color: $primary-text;
+                max-width: fit-content;
+                padding: 8px;
+                border: solid 1px $sec_text;
+                border-radius: 4px;
+                transition: .4s;
+                
+                &:hover {
+                    color: $sec_text;
+                    transform: scale(1.03);
+
+                }
+            }
+        }
+    }
+}
+
+.laptop_img {
+    position: relative;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    overflow:hidden;
+
+    img {
+        width:122%
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .main_background_box .headings {
+        margin-top:9%;
+
+        .sub {
+            margin-top: 40px;
+        }
+    }
+
+    .sec_background_box {
+        justify-content: center;
+        align-items: center;
+
+        .project {
+            width:100%;
+
+            .contact_btn_position {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+            
+            }
+        }
+    }
+}
+
+.laptop_img {
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .homepage_layout {
+        padding-top: 0;
+        grid-template-rows: 12% 58% 18% 7% 5%;;
+    }
+}
