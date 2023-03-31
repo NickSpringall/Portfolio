@@ -292,6 +292,16 @@ main .notebook img {
   height: 500px;
   width: 500px;
 }
+main .notebook .business_card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+}
+main .notebook .business_card .info {
+  padding: 8px;
+  color: #D9D9D9;
+}
 main .notebook .form_cont {
   position: absolute;
   display: flex;

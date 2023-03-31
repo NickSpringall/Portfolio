@@ -69,6 +69,18 @@ main {
         align-items: center;
         justify-content: center;
 
+        .business_card {
+            position:absolute;
+            display: flex;
+            flex-direction: column;
+            left: 20px;
+            
+
+            .info {
+                padding: 8px;
+                color: $primary-text;
+            }
+        }
         .form_cont {
             position:absolute;
             display: flex;
