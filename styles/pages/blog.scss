@@ -27,7 +27,6 @@ main {
         width: 400px;
         height: 250px;
         margin: 40px;
-        display:grid;
         margin:24px;
         transition: .4s;
 
@@ -60,14 +59,13 @@ main {
             background-color: $primary-background;
             border: solid 1px;
             border-radius: 4px;
-
         }
 
         h2 {
             position: relative;
             grid-column:1 / span 8;
             grid-row: 2 / span 6;
-            color: $primary-text;
+            color: $primary-background;
         }
 
         h3 {
