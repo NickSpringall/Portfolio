@@ -234,5 +234,81 @@ footer .call .call_text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
+}
+
+.about_cont {
+  display: grid;
+  grid-template-columns: 3% 2% 7% 24% 23% 32% 4% 5%;
+  grid-template-rows: 20px 75px 250px 70px 300px 20px;
+  margin: 12px 0 38px;
+}
+.about_cont .main_background_box {
+  background-color: #c6a3a3;
+  position: relative;
+  grid-row: 2/span 4;
+  grid-column: 3/span 5;
+}
+.about_cont .training {
+  margin-top: 12px;
+  position: relative;
+  grid-row: 2;
+  grid-column: 4/span 2;
+}
+.about_cont .interests {
+  margin-top: 12px;
+  position: relative;
+  grid-row: 4;
+  grid-column: 4/span 2;
+}
+.about_cont .computer_image {
+  background-color: black;
+  position: relative;
+  grid-row: 1/span 4;
+  grid-column: 6;
+  overflow: hidden;
+}
+.about_cont .computer_image img {
+  width: 100%;
+}
+.about_cont .kayak_img {
+  background-color: black;
+  position: relative;
+  grid-row: 5/span 2;
+  grid-column: 2/span 3;
+  overflow: hidden;
+}
+.about_cont .kayak_img img {
+  width: 100%;
+}
+.about_cont .interests_txt {
+  grid-column: 5/span 2;
+  grid-row: 5;
+  padding-top: 36px;
+  padding-left: 24px;
+  color: #271919;
+}
+.about_cont .interests2_txt {
+  grid-column: 5/span 2;
+  grid-row: 5;
+  padding-top: 136px;
+  padding-left: 24px;
+  color: #271919;
+}
+.about_cont .sec_background_box {
+  background-color: #271919;
+  position: relative;
+  grid-row: 3;
+  grid-column: 1/span 8;
+}
+.about_cont .sec_background_box .prof_p1 {
+  margin-right: 43%;
+  margin-left: 24px;
+  padding-top: 36px;
+  color: #c6a3a3;
+}
+.about_cont .sec_background_box .prof_p2 {
+  margin-right: 43%;
+  margin-left: 24px;
+  padding-top: 24px;
+  color: #c6a3a3;
 }/*# sourceMappingURL=about.css.map */

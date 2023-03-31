@@ -5,5 +5,98 @@
 
 .page_layout {
     @include page_layout();
-    height: 200px;
 }
+
+.about_cont {
+    display: grid;
+    // 8 columns
+    grid-template-columns: 3% 2% 7% 24% 23% 32% 4% 5%;
+    // 6 rows
+    grid-template-rows: 20px 75px 250px 70px 300px 20px;
+    margin: 12px 0 38px;
+
+    .main_background_box {
+        background-color: $sec_text;
+        position:relative;
+        grid-row: 2 / span 4;
+        grid-column: 3 / span 5;
+    }
+
+    .training {
+        margin-top: 12px;
+        position:relative;
+        grid-row: 2;
+        grid-column: 4 / span 2;
+    }
+
+    .interests {
+        margin-top: 12px;
+        position:relative;
+        grid-row: 4;
+        grid-column: 4 / span 2;
+    }
+
+    .computer_image {
+        background-color: black;
+        position: relative;
+        grid-row:  1 / span 4;
+        grid-column: 6;
+        overflow: hidden;
+
+        img {
+            width:100%;
+        }
+    }
+
+    .kayak_img {
+        background-color: black;
+        position: relative;
+        grid-row: 5 / span 2;
+        grid-column: 2 / span 3;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .interests_txt {
+        grid-column: 5 / span 2;
+        grid-row: 5;
+        padding-top: 36px;
+        padding-left: 24px;
+        color: $primary-background;
+    }
+
+    .interests2_txt {
+        grid-column: 5 / span 2;
+        grid-row: 5;
+        padding-top: 136px;
+        padding-left: 24px;
+        color: $primary-background;
+    }
+
+    .sec_background_box {
+        background-color: $primary-background;
+        position: relative;
+        grid-row: 3;
+        grid-column: 1 / span 8;
+
+        .prof_p1 {
+
+            margin-right: 43%;
+            margin-left: 24px;
+            padding-top:36px;
+            color: $sec_text;
+        }
+
+        .prof_p2 {
+            margin-right: 43%;
+            margin-left: 24px;
+            padding-top: 24px;
+            color: $sec_text;
+        }
+    }
+
+}
+
