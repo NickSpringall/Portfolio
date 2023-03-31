@@ -311,4 +311,39 @@ footer .call .call_text {
   margin-left: 24px;
   padding-top: 24px;
   color: #c6a3a3;
+}
+
+@media screen and (max-width: 1000px) {
+  .about_cont {
+    display: grid;
+    grid-template-columns: 3% 2% 7% 24% 30% 25% 4% 5%;
+    grid-template-rows: 20px 75px 130px 145px 70px 300px 20px;
+    margin: 12px 0 38px;
+  }
+  .about_cont .main_background_box {
+    grid-row: 2/span 6;
+  }
+  .about_cont .computer_image {
+    grid-row: 1/span 3;
+  }
+  .about_cont .sec_background_box {
+    grid-row: 3/span 2;
+  }
+  .about_cont .sec_background_box .prof_p2 {
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+  .about_cont .interests_txt {
+    grid-row: 6;
+  }
+  .about_cont .interests2_txt {
+    grid-row: 6;
+    padding-top: 166px;
+  }
+  .about_cont .interests {
+    grid-row: 5;
+    grid-column: 5/span 2;
+    padding-left: 24px;
+    padding-top: 12px;
+  }
 }/*# sourceMappingURL=about.css.map */

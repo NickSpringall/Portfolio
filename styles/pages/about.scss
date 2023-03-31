@@ -83,7 +83,6 @@
         grid-column: 1 / span 8;
 
         .prof_p1 {
-
             margin-right: 43%;
             margin-left: 24px;
             padding-top:36px;
@@ -97,6 +96,51 @@
             color: $sec_text;
         }
     }
+}
 
+
+@media screen and (max-width: $tablet) {
+    .about_cont {
+        display: grid;
+        // 8 columns
+        grid-template-columns: 3% 2% 7% 24% 30% 25% 4% 5%;
+        // 6 rows
+        grid-template-rows: 20px 75px 130px 145px 70px 300px 20px;
+        margin: 12px 0 38px;
+
+        .main_background_box {
+            grid-row: 2 / span 6;
+        }
+
+        .computer_image {
+            grid-row: 1 / span 3;
+        }
+
+        .sec_background_box {
+            grid-row: 3 / span 2;
+
+            .prof_p2 {
+                margin-right: 24px;
+                margin-top: 24px;
+            }
+        
+        }
+    .interests_txt {
+        grid-row: 6;
+    }
+
+    .interests2_txt {
+        grid-row: 6;
+        padding-top: 166px;
+    }
+
+    .interests {
+        grid-row: 5;
+        grid-column: 5 / span 2;
+        padding-left: 24px;
+        padding-top: 12px;
+    }
+
+    }
 }
 
