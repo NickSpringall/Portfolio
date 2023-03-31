@@ -1,0 +1,40 @@
+@import "../components/header";
+@import "../components/footer";
+@import "../defaults/colors";
+@import "../components/utils";
+
+.page_layout {
+    @include page_layout();
+}
+
+.resume_cont {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:24px;
+
+    a {
+        padding: 18px;
+        border: solid 1px $primary-background;
+        border-radius: 8px;
+        background-color: $primary-background;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: $hover;
+        }
+
+        .contact_btn {
+            color: $primary-text;
+            font-weight:lighter;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .resume_cont {
+        img {
+            max-width:100%;
+        }
+    }
+}
