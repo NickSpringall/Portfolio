@@ -308,7 +308,7 @@ main .blog_post_cont h3 {
 }
 @media screen and (max-width: 630px) {
   main .blog_links .blog_post_cont {
-    width: 350px;
+    width: 320px;
     height: 180px;
     margin: 20px;
   }
