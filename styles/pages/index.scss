@@ -7,7 +7,8 @@
     @include page_layout();
 }
 
-.homepage_layout {
+// grid display positions main elements
+main {
     height:500px;
     padding-top: 40px;
     display: grid;
@@ -15,15 +16,17 @@
     grid-template-rows: 12% 58% 18% 7% 5%;
 }
 
+// light brown box heading text positioned to right with flex
 .main_background_box {
     background-color: $primary-text;
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
   
     grid-column: 3 / span 2;
     grid-row: 1 / span 5;
 
+    // heading width constrained to 45% to prevent from touching image
     .headings {
         margin-top: 6%;
         height:150px;
@@ -40,6 +43,7 @@
     }
 }
 
+// dark brown box, flex-end positions content on right side
 .sec_background_box {
     background-color: $primary-background;
     position: relative;
@@ -48,6 +52,7 @@
     grid-column: 1 / span 5;
     grid-row: 3 / span 2;
 
+    // width 47% keeps text constrained to right half
     .project {
         height: 100px;
         width: 47%;
@@ -74,6 +79,7 @@
                 border-radius: 4px;
                 transition: .4s;
                 
+                // hover transform expands without affecting elements around
                 &:hover {
                     color: $sec_text;
                     transform: scale(1.03);
@@ -84,18 +90,23 @@
     }
 }
 
+// div containing image, image size fixed inside div with overflow:hidden
 .laptop_img {
     position: relative;
     grid-column: 2 / span 2;
     grid-row: 2 / span 2;
     overflow:hidden;
 
+    // image width prevents image become too small to fill div due to different aspect ratio
     img {
         width:122%
     }
 }
 
+
 @media screen and (max-width: $tablet) {
+
+    // heading more central for tablet
     .main_background_box .headings {
         margin-top:9%;
 
@@ -104,6 +115,7 @@
         }
     }
 
+    // project question and contact button moved to right and below image
     .sec_background_box {
         justify-content: center;
         align-items: center;
@@ -128,8 +140,8 @@
 }
 
 @media screen and (max-width: $mobile) {
-    .homepage_layout {
-        padding-top: 10px;
+    main {
+        padding: 10px;
 
         .main_background_box .headings {
         width:100%;

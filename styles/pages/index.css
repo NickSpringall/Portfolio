@@ -1,6 +1,5 @@
 * {
   background-color: none;
-  position: relative;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -150,7 +149,6 @@ nav .nav-list .nav-link {
 }
 * {
   background-color: none;
-  position: relative;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -236,7 +234,7 @@ footer .call .call_text {
   justify-content: space-between;
 }
 
-.homepage_layout {
+main {
   height: 500px;
   padding-top: 40px;
   display: grid;
@@ -248,7 +246,7 @@ footer .call .call_text {
   background-color: #D9D9D9;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   grid-column: 3/span 2;
   grid-row: 1/span 5;
 }
@@ -338,15 +336,15 @@ footer .call .call_text {
 }
 
 @media screen and (max-width: 630px) {
-  .homepage_layout {
-    padding-top: 10px;
+  main {
+    padding: 10px;
   }
-  .homepage_layout .main_background_box .headings {
+  main .main_background_box .headings {
     width: 100%;
     margin-top: 0px;
     grid-row: 4/span 5;
   }
-  .homepage_layout .main_background_box .headings .sub {
+  main .main_background_box .headings .sub {
     margin-left: 51%;
   }
 }/*# sourceMappingURL=index.css.map */

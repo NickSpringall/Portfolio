@@ -1,6 +1,5 @@
 * {
   background-color: none;
-  position: relative;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -150,7 +149,6 @@ nav .nav-list .nav-link {
 }
 * {
   background-color: none;
-  position: relative;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -284,9 +282,7 @@ main .notebook {
   height: 500px;
   width: 500px;
   background-color: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 main .notebook img {
   height: 500px;
@@ -297,6 +293,7 @@ main .notebook .business_card {
   display: flex;
   flex-direction: column;
   left: 20px;
+  bottom: 180px;
 }
 main .notebook .business_card .info {
   padding: 8px;

@@ -8,6 +8,7 @@
 }
 
 main {
+    // flex display with central alignment for the 2 elements
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +21,7 @@ main {
         background-color: $primary-background;
         transition: 0.4s;
 
+        // 0.4 second transition to lighter colour when hovering over link
         &:hover {
             background-color: $hover;
         }
@@ -32,9 +34,11 @@ main {
 }
 
 @media screen and (max-width: $tablet) {
+
+
     .resume_cont {
         img {
-            max-width:100%;
+            min-width:100%;
         }
     }
 }

@@ -1,6 +1,5 @@
 * {
   background-color: none;
-  position: relative;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -150,7 +149,6 @@ nav .nav-list .nav-link {
 }
 * {
   background-color: none;
-  position: relative;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -259,6 +257,6 @@ main a .contact_btn {
 
 @media screen and (max-width: 1000px) {
   .resume_cont img {
-    max-width: 100%;
+    min-width: 100%;
   }
 }/*# sourceMappingURL=resume.css.map */

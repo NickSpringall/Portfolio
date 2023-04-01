@@ -8,11 +8,13 @@
 }
 
 main {
+    // grid display for main elements, responsive width with %
     display: grid;
     grid-template-columns: 3% 2% 7% 24% 23% 32% 4% 5%;
     grid-template-rows: 20px 75px 250px 70px 300px 20px;
     margin: 12px 0 38px;
 
+    // main background box positioned centrally over whole page
     .main_background_box {
         background-color: $sec_text;
         position:relative;
@@ -64,6 +66,7 @@ main {
         padding-top: 36px;
         padding-left: 24px;
         color: $primary-background;
+        z-index: 2;
     }
 
     .interests2_txt {
@@ -72,14 +75,17 @@ main {
         padding-top: 136px;
         padding-left: 24px;
         color: $primary-background;
+        z-index: 2;
     }
 
+    // secondary background box positioned full width over main background box
     .sec_background_box {
         background-color: $primary-background;
         position: relative;
         grid-row: 3;
         grid-column: 1 / span 8;
 
+        // paragraph 1 and 2 43% margin leaves space to wrap around computer image
         .prof_p1 {
             margin-right: 43%;
             margin-left: 24px;
@@ -99,7 +105,7 @@ main {
 
 @media screen and (max-width: $tablet) {
 
-    .about_cont {
+    main {
         display: grid;
         grid-template-columns: 3% 2% 7% 24% 30% 25% 4% 5%;
         grid-template-rows: 20px 75px 130px 145px 70px 300px 20px;
@@ -108,7 +114,7 @@ main {
             .main_background_box {
                 grid-row: 2 / span 6;
             }
-
+            // smaller computer image for tablet
             .computer_image {
                 grid-row: 1 / span 3;
             }
@@ -116,6 +122,7 @@ main {
             .sec_background_box {
                 grid-row: 3 / span 2;
 
+                // smaller computer image means paragraph 2 can go full width
                 .prof_p2 {
                     margin-right: 24px;
                     margin-top: 24px;
@@ -131,6 +138,7 @@ main {
             padding-top: 166px;
         }
 
+        // move interest heading to right of kayak image
         .interests {
             grid-row: 5;
             grid-column: 5 / span 2;
@@ -141,7 +149,9 @@ main {
 }
 
 @media screen and (max-width: $mobile) {
-    .about_cont {
+
+    main {
+        // single, full width column grid for mobile view with no padding
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 56px 200px 330px 56px 280px 130px 150px;
@@ -205,8 +215,9 @@ main {
         
         .interests2_txt {
             grid-column: 1;
-            grid-row: 7;
-            padding-top: 24px;
+            grid-row: 8;
+            padding-top: 0px;
+            padding-bottom:24px;
         }
     }
 }
