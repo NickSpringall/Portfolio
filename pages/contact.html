@@ -11,136 +11,152 @@
 </head>
 
 <body>
+
+    <!-- container used to force the header to the top and footer to the bottom -->
     <container class="page_layout">
         <header>
+
+            <!-- checkbox toggles mobile dropdown menu -->
             <input style=display:none; type="checkbox" id="toggle">
 
             <nav>
-                <a class="navbar-logo" href="#">
+                <!-- header title top left, links to homepage -->
+                <a class="navbar-logo" href="../index.html">
                     <div class="name">NICK SPRINGALL</div>
                     <div class="title">web developer</div>
                 </a>
+
+                <!-- div z-indexed to hide bottom of menu when toggled off  -->
                 <div class="list_cover"></div>
 
-           
-            <label class="navbar-toggler" for="toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <!-- spans styled to draw hamburger menu logo and animate to cross when toggled on -->
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </label>
    
+                <!-- unordered list contains page links-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">HOME</a>
+                    </li>
 
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">HOME</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">ABOUT</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">ABOUT</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">BLOG</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="./blog.html" class="nav-link">BLOG</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./resume.html" class="nav-link">RESUME</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="./resume.html" class="nav-link">RESUME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">CONTACT</a>
-                </li>
-        </nav>
-    </header>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     
-<main> 
-    <h1>GET IN TOUCH</h1>
-    <h2>I'm looking forward to hearing from you</h2>
+        <main> 
 
-    <div class="background_box"></div>
+            <h1>GET IN TOUCH</h1>
+            <h2>I'm looking forward to hearing from you</h2>
 
-    <div class="coffee_img">
-        <img src="../styles/components/images/coffee.jpg" alt="">
-    </div>
+            <!-- brown block in background -->
+            <div class="background_box"></div>
 
-    <div class="notebook">
-        <img src="../styles/components/images/notebook_no_border.png" alt="">
-    
-    <div class="business_card">
-        <text class="info">nick@gmail.com</text>
-        <text class="info">0433 222 111</text>
-        <text class="info">117 Mclean rd, Lake Barrine</text>
-    </div>
-        <form class="form_cont">
+            <div class="coffee_img">
+                <img src="../styles/components/images/coffee.jpg" alt="image of coffee and laptop">
+            </div>
+
+            <!-- notebook image styled contact info and contact form -->
+            <div class="notebook">
+                <img src="../styles/components/images/notebook_no_border.png" alt="">
             
-            <div class="form_elements">
-                <label for="name">NAME: </label>
-                <input class="form_input" type="text" id="name" required>
-            </div> 
-
-            <div class="form_elements">
-                <label for="email">EMAIL: </label>
-                <input class="form_input" type="text" id="email" required>
-            </div>
-
-            <div class="form_elements">
-                <label for="phone">PHONE: </label>
-                <input class="form_input" type="tel" id="phone">
-            </div> 
-
-            <div class="form_elements">
-                <label for="message">MESSAGE: </label>
-                <textarea class="form_input" class="message_size" type="text" id="message" required></textarea>
-            </div>
-
-            <div class="send_button">
-                <button id="send">SEND</button>
-            </div>
-        </form>
-    </div>
-
-</main>
-
-<footer>
-
-    <span class="professional_links">
-        <div class="prof_links_box">
-            <a href="https://www.github.com" target="_blank">
-                <i class="fa-brands fa-github" style="color: #c6a3a3;"></i>
-            </a>
-        </div>
-
-        <div class="prof_links_box">
-            <a href="https://www.linkedin.com" target="_blank">
-                <i class="fa-brands fa-linkedin" style="color: #c6a3a3;"></i>
-            </a>
-        </div> 
-
-        <div class="prof_links_box">
-            <a href="https://www.facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook" style="color: #c6a3a3;"></i>
-            </a>
-        </div>
-
-        <div class="prof_links_box">
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram" style="color: #c6a3a3;"></i>
-            </a>
-        </div> 
-    </span>
-
-    <span class="call">   
-            <a class="phone_number" href="tel:0411846274"> 
-                <div class="box">
-                    <i class="fa-solid fa-phone phone_number" style="color: #c6a3a3;">
-                    </i>
-                    <span class="call_text">CALL ME NOW
-                    </span>
+                <!-- styled on left of contact form -->
+                <div class="business_card">
+                    <text class="info">nick@gmail.com</text>
+                    <text class="info">0433 222 111</text>
+                    <text class="info">117 Mclean rd, Lake Barrine</text>
                 </div>
-            </a>
-    </span>
-    
-</footer>
-</container>
+
+                <!-- contact form -->
+                <form class="form_cont">
+                    
+                    <div class="form_elements">
+                        <label for="name">NAME: </label>
+                        <input class="form_input" type="text" id="name" required>
+                    </div> 
+
+                    <div class="form_elements">
+                        <label for="email">EMAIL: </label>
+                        <input class="form_input" type="text" id="email" required>
+                    </div>
+
+                    <div class="form_elements">
+                    <label for="phone">PHONE: </label>
+                    <input class="form_input" type="tel" id="phone">
+                    </div> 
+
+                    <div class="form_elements">
+                        <label for="message">MESSAGE: </label>
+                        <textarea class="form_input" class="message_size" type="text" id="message" required></textarea>
+                    </div>
+
+                    <div class="send_button">
+                        <button id="send">SEND</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+
+            <!-- footer icon links to professional pages-->
+            <span class="professional_links">
+                <div class="prof_links_box">
+                    <a href="https://www.github.com" target="_blank">
+                        <i class="fa-brands fa-github" style="color: #c6a3a3;"></i>
+                    </a>
+                </div>
+
+                <div class="prof_links_box">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color: #c6a3a3;"></i>
+                    </a>
+                </div> 
+
+                <div class="prof_links_box">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook" style="color: #c6a3a3;"></i>
+                    </a>
+                </div>
+
+                <div class="prof_links_box">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: #c6a3a3;"></i>
+                    </a>
+                </div> 
+            </span>
+            
+            <!-- click to call button has device call directly -->
+            <span class="call">   
+
+                <a class="phone_number" href="tel:0411846274"> 
+                    <div class="box">
+                        <i class="fa-solid fa-phone phone_number" style="color: #c6a3a3;">
+                        </i>
+
+                        <span class="call_text">CALL ME NOW
+                        </span>
+                    </div>
+                </a>
+            </span>
+        </footer>
+    </container>
 </body>
 </html>

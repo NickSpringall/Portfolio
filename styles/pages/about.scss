@@ -7,7 +7,7 @@
     @include page_layout();
 }
 
-.about_cont {
+main {
     display: grid;
     grid-template-columns: 3% 2% 7% 24% 23% 32% 4% 5%;
     grid-template-rows: 20px 75px 250px 70px 300px 20px;

@@ -11,118 +11,123 @@
 </head>
 
 <body>
+    <!-- container used to force the header to the top and footer to the bottom -->
     <container class="page_layout">
+
         <header>
-            <input style=display:none; type="checkbox" id="toggle">
+        <!-- checkbox toggles mobile dropdown menu -->
+        <input style=display:none; type="checkbox" id="toggle">
 
             <nav>
-                <a class="navbar-logo" href="#">
-                    <div class="name">NICK SPRINGALL</div>
-                    <div class="title">web developer</div>
+                <!-- header title top left, links to homepage-->
+                <a class="navbar-logo" href="../index.html">
+                        <div class="name">NICK SPRINGALL</div>
+                        <div class="title">web developer</div>
                 </a>
+                
+                <!-- div z-indexed to hide bottom of menu when toggled off  -->
+                <div class="list_cover"></div>
 
-            <div class="list_cover"></div>
-
-           
-            <label class="navbar-toggler" for="toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-                </label>
-   
-
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">HOME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">ABOUT</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="./blog.html" class="nav-link">BLOG</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="./resume.html" class="nav-link">RESUME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">CONTACT</a>
-                </li>
-        </nav>
-    </header>
+                <!-- spans styled to draw hamburger menu logo and animate to cross when toggled on -->
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    </label>
     
-<main> 
+                <!-- unordered list contains page links-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">HOME</a>
+                    </li>
 
-    <container class="about_cont">
-        
-        <div class="main_background_box"></div>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">ABOUT</a>
+                    </li>
 
-        <div class="sec_background_box">
-            <p class="prof_p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate doloribus doloremque, quibusdam, beatae optio perspiciatis aperiam temporibus voluptatum molestias distinctio eos dolore cumque illo nobis eaque amet architecto consequuntur.</p>
-            <p class="prof_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sint maiores neque iure! Placeat sed nostrum, dolorum ab natus iure cupiditate animi explicabo? Placeat asperiores possimus saepe tempore assumenda ducimus.</p>
-        </div>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">BLOG</a>
+                    </li>
 
-        <div class="computer_image">
-            <img src="../styles/components/images/computer_screens.jpg">
-        </div>
+                    <li class="nav-item">
+                        <a href="./resume.html" class="nav-link">RESUME</a>
+                    </li>
 
-        <div class="kayak_img">
-            <img src="../styles/components/images/Kayak.jpg">
-        </div>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main> 
 
-        <h1 class="training">Professional Training</h1>
-        <h1 class="interests">Interests and Hobbies</h1>
+            <div class="main_background_box"></div>
 
-        <p class="interests_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quia sed, assumenda ipsam quae consequatur amet magnam in, odit quasi cupiditate pariatur fugit accusamus dolores praesentium aliquam at tempore voluptate. </p>
-        <p class="interests2_txt">lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quia sed, assumenda ipsam quae consequatur amet magnam in, odit quasi cupiditate pariatur fugit accusamus dolores praesentium aliquam at tempore voluptate. </p>
+            <div class="sec_background_box">
+                <p class="prof_p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate doloribus doloremque, quibusdam, beatae optio perspiciatis aperiam temporibus voluptatum molestias distinctio eos dolore cumque illo nobis eaque amet architecto consequuntur.</p>
+                <p class="prof_p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sint maiores neque iure! Placeat sed nostrum, dolorum ab natus iure cupiditate animi explicabo? Placeat asperiores possimus saepe tempore assumenda ducimus.</p>
+            </div>
 
-    </container>
-</main>
+            <div class="computer_image">
+                <img src="../styles/components/images/computer_screens.jpg">
+            </div>
 
-<footer>
+            <div class="kayak_img">
+                <img src="../styles/components/images/Kayak.jpg">
+            </div>
 
-    <span class="professional_links">
-        <div class="prof_links_box">
-            <a href="https://www.github.com" target="_blank">
-                <i class="fa-brands fa-github" style="color: #c6a3a3;"></i>
-            </a>
-        </div>
+            <h1 class="training">Professional Training</h1>
+            <h1 class="interests">Interests and Hobbies</h1>
 
-        <div class="prof_links_box">
-            <a href="https://www.linkedin.com" target="_blank">
-                <i class="fa-brands fa-linkedin" style="color: #c6a3a3;"></i>
-            </a>
-        </div> 
+            <p class="interests_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quia sed, assumenda ipsam quae consequatur amet magnam in, odit quasi cupiditate pariatur fugit accusamus dolores praesentium aliquam at tempore voluptate. </p>
+            <p class="interests2_txt">lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis quia sed, assumenda ipsam quae consequatur amet magnam in, odit quasi cupiditate pariatur fugit accusamus dolores praesentium aliquam at tempore voluptate. </p>
 
-        <div class="prof_links_box">
-            <a href="https://www.facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook" style="color: #c6a3a3;"></i>
-            </a>
-        </div>
+        </main>
 
-        <div class="prof_links_box">
-            <a href="https://www.instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram" style="color: #c6a3a3;"></i>
-            </a>
-        </div> 
-    </span>
+        <footer>
 
-    <span class="call">   
-            <a class="phone_number" href="tel:0411846274"> 
-                <div class="box">
-                    <i class="fa-solid fa-phone phone_number" style="color: #c6a3a3;">
-                    </i>
-                    <span class="call_text">CALL ME NOW
-                    </span>
+            <!-- footer icon links to professional pages-->
+            <span class="professional_links">
+                <div class="prof_links_box">
+                    <a href="https://www.github.com" target="_blank">
+                        <i class="fa-brands fa-github" style="color: #c6a3a3;"></i>
+                    </a>
                 </div>
-            </a>
-    </span>
-    
-</footer>
 
-</container>
+                <div class="prof_links_box">
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i class="fa-brands fa-linkedin" style="color: #c6a3a3;"></i>
+                    </a>
+                </div> 
+
+                <div class="prof_links_box">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook" style="color: #c6a3a3;"></i>
+                    </a>
+                </div>
+
+                <div class="prof_links_box">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: #c6a3a3;"></i>
+                    </a>
+                </div> 
+            </span>
+
+            <!-- click to call button has device call directly -->
+            <span class="call">   
+                <a class="phone_number" href="tel:0411846274"> 
+                    <div class="box">
+                        <i class="fa-solid fa-phone phone_number" style="color: #c6a3a3;">
+                        </i>
+
+                        <span class="call_text">CALL ME NOW
+                        </span>
+                    </div>
+                </a>
+            </span>
+        </footer>
+    </container>
 </body>
+
 </html>

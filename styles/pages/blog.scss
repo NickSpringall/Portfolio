@@ -12,14 +12,12 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .blog_links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
+    
     .blog_post_cont {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

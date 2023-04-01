@@ -11,121 +11,124 @@
 </head>
 
 <body>
-<container class="page_layout">
+    <!-- container used to force the header to the top and footer to the bottom -->
+    <container class="page_layout">
 
-    <header>
-        <input style=display:none; type="checkbox" id="toggle">
+        <header>
+            <!-- checkbox toggles mobile dropdown menu -->
+            <input style=display:none; type="checkbox" id="toggle">
 
-        <nav>
-            <a class="navbar-logo" href="#">
-                <div class="name">NICK SPRINGALL</div>
-                <div class="title">web developer</div>
-            </a>
-            
-            <div class="list_cover"></div>
+            <nav>
+                <!-- header title top left, links to homepage -->
+                <a class="navbar-logo" href="../index.html">
+                    <div class="name">NICK SPRINGALL</div>
+                    <div class="title">web developer</div>
+                </a>
+                
+                <!-- div z-indexed to hide bottom of menu when toggled off  -->
+                <div class="list_cover"></div>
 
-       
-        <label class="navbar-toggler" for="toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            </label>
+                <!-- spans styled to draw hamburger menu logo and animate to cross when toggled on -->
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    </label>
 
+                <!-- unordered list contains page links-->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">HOME</a>
+                    </li>
 
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="../index.html" class="nav-link">HOME</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link">ABOUT</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">ABOUT</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./blog.html" class="nav-link">BLOG</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="./blog.html" class="nav-link">BLOG</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./resume.html" class="nav-link">RESUME</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a href="./resume.html" class="nav-link">RESUME</a>
-                </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">CONTACT</a>
-                </li>
-    </nav>
-</header>
+        <main> 
 
-<main> 
+            <container class="blog_post_cont">
 
-<container class="blog_post_cont">
+                <div class="prim_background_box"></div>
 
-    <div class="prim_background_box"></div>
+                <div class="heading">
+                    <h1>Sunrise blog post</h1>
+                    <h2 class="date">10/07/23</h2>
+                </div>
 
-    <div class="heading">
-        <h1>Sunrise blog post</h1>
-        <h2 class="date">10/07/23</h2>
-    </div>
+                <p class="paragraph1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus suscipit dolor necessitatibus iusto eos, repellendus modi, ratione, aliquam magnam velit odio totam aliquid in sequi tenetur? Debitis animi alias aut!</p>
 
-    <p class="paragraph1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus suscipit dolor necessitatibus iusto eos, repellendus modi, ratione, aliquam magnam velit odio totam aliquid in sequi tenetur? Debitis animi alias aut!</p>
+                <div class="image1">
+                    <img src="../styles/components/images/blog_sunrise.jpg">
+                </div>
 
-    <div class="image1">
-        <img src="../styles/components/images/blog_sunrise.jpg">
-    </div>
+                <div class="sec_box">
+                    <div class="image2">
+                        <img src="../styles/components/images/blog_sunrise2.jpg">
+                    </div>
+                    <p id="paragraph2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum obcaecati expedita debitis eligendi vero repellendus nulla facilis ab culpa rem exercitationem similique delectus possimus veniam esse accusamus, id numquam? Odit?</p>
+                </div>
 
-    <div class="sec_box">
-        <div class="image2">
-            <img src="../styles/components/images/blog_sunrise2.jpg">
-        </div>
-        <p id="paragraph2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum obcaecati expedita debitis eligendi vero repellendus nulla facilis ab culpa rem exercitationem similique delectus possimus veniam esse accusamus, id numquam? Odit?</p>
-    </div>
+                <p id="paragraph3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga natus velit qui dicta architecto voluptas sed cupiditate, et voluptatum corporis quo fugiat reiciendis temporibus ipsa? Doloribus totam id voluptatum!</p>
 
-    <p id="paragraph3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga natus velit qui dicta architecto voluptas sed cupiditate, et voluptatum corporis quo fugiat reiciendis temporibus ipsa? Doloribus totam id voluptatum!</p>
+            </container>
+        </main>
 
-</container>
+        <footer>
 
-</main>
-
-<footer>
-
-<span class="professional_links">
-    <div class="prof_links_box">
-        <a href="https://www.github.com" target="_blank">
-            <i class="fa-brands fa-github" style="color: #c6a3a3;"></i>
-        </a>
-    </div>
-
-    <div class="prof_links_box">
-        <a href="https://www.linkedin.com" target="_blank">
-            <i class="fa-brands fa-linkedin" style="color: #c6a3a3;"></i>
-        </a>
-    </div> 
-
-    <div class="prof_links_box">
-        <a href="https://www.facebook.com" target="_blank">
-            <i class="fa-brands fa-facebook" style="color: #c6a3a3;"></i>
-        </a>
-    </div>
-
-    <div class="prof_links_box">
-        <a href="https://www.instagram.com" target="_blank">
-            <i class="fa-brands fa-instagram" style="color: #c6a3a3;"></i>
-        </a>
-    </div> 
-</span>
-
-<span class="call">   
-        <a class="phone_number" href="tel:0411846274"> 
-            <div class="box">
-                <i class="fa-solid fa-phone phone_number" style="color: #c6a3a3;">
-                </i>
-                <span class="call_text">CALL ME NOW
-                </span>
+        <span class="professional_links">
+            <div class="prof_links_box">
+                <a href="https://www.github.com" target="_blank">
+                    <i class="fa-brands fa-github" style="color: #c6a3a3;"></i>
+                </a>
             </div>
-        </a>
-</span>
 
-</footer>
+            <div class="prof_links_box">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #c6a3a3;"></i>
+                </a>
+            </div> 
 
-</container>
+            <div class="prof_links_box">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook" style="color: #c6a3a3;"></i>
+                </a>
+            </div>
+
+            <div class="prof_links_box">
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram" style="color: #c6a3a3;"></i>
+                </a>
+            </div> 
+        </span>
+
+            <span class="call">   
+                    <a class="phone_number" href="tel:0411846274"> 
+                        <div class="box">
+                            <i class="fa-solid fa-phone phone_number" style="color: #c6a3a3;">
+                            </i>
+                            <span class="call_text">CALL ME NOW
+                            </span>
+                        </div>
+                    </a>
+            </span>
+        </footer>
+    </container>
 </body>
+
 </html>

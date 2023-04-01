@@ -236,23 +236,23 @@ footer .call .call_text {
   justify-content: space-between;
 }
 
-.resume_cont {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 24px;
 }
-.resume_cont a {
+main a {
   padding: 18px;
   border: solid 1px #271919;
   border-radius: 8px;
   background-color: #271919;
   transition: 0.4s;
 }
-.resume_cont a:hover {
+main a:hover {
   background-color: #664b45;
 }
-.resume_cont a .contact_btn {
+main a .contact_btn {
   color: #D9D9D9;
   font-weight: lighter;
 }
