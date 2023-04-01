@@ -2,15 +2,19 @@
 @import "../components/footer";
 @import "../defaults/colors";
 @import "../components/utils";
+
 .page_layout {
     @include page_layout();
 }
 main {
+    // grid display containing main elements 5 columns and 8 rows
     display:grid;
     height: auto;
     padding-top: 30px;
     grid-template-columns: .5fr 1fr .5fr 4fr 8fr;
     grid-template-rows: 1rem 2rem 2.4rem 3rem 3rem 10rem 10rem 2rem;
+    
+    // primary heading 
     h1 {
         grid-column: 2;
         grid-row: 3;
@@ -19,6 +23,8 @@ main {
         font-weight: lighter;
         color: $primary_text;
     }
+
+    // secondary heading offset from first in next grid
     h2 {
         grid-column: 4;
         grid-row: 4;
@@ -26,6 +32,8 @@ main {
         font-size: 16px;
         color: $primary_text;
     }
+
+    // brown background box, spans entire screen, slightly shorter than the notebook which sits on top
     .background_box {
         background-color: $primary-background;
         position:absolute;
@@ -35,6 +43,8 @@ main {
         grid-row: 2;
         z-index: -1;
     }
+
+    // image positioned under primary and secondary heading
     .coffee_img {
         img{
             width:100%;
@@ -46,6 +56,8 @@ main {
         height: auto;
         width: 300px;
         }
+    
+    // notebook image contains contact details and contact form positioned as to be on the notebook page
     .notebook {
         img {
             height: 500px;
@@ -60,6 +72,7 @@ main {
          align-items: center;
          justify-content: center;
 
+        //  business card text positioned over left cover of notebook
          .business_card {
              position:absolute;
              display: flex;
@@ -72,6 +85,8 @@ main {
                  color: $primary-text;
              }
          }
+
+        //  form content positioned corectly over page of notebook with absolute position
          .form_cont {
              position:absolute;
              display: flex;
@@ -82,16 +97,21 @@ main {
             border: solid 1px black;
             height: 370px;
             width: 196px;
+
             .form_elements {
                 display: flex;
                 flex-direction: column;
                 align-items: left;
+
+                //  labels are positioned above input and offset to the line on the page image 40px from left of the form
                 label {
                     padding: 4px;
                     left:50px;
                     font-size: 16px;
                     color: $primary_background;
                 }
+
+                // form input opacity allows for notebook on layer underneath to remain visable while making input box clearly identifiable
                 .form_input {
                     opacity: .7;
                     border: solid 1px black;
@@ -101,10 +121,12 @@ main {
                         background-color: $sec_text;
                     }
                 }
+
                 textarea {
                     height:150px;
                 }
             }
+            // send button central at bottom of form with border that spans the width of the form
             .send_button {
                 padding-top: 6px;
                 #send {
@@ -145,11 +167,13 @@ main {
             position: absolute;
             font-size: 12px;
         }
+        // coffee image moves up a row to top of page
         .coffee_img {
             grid-row: 1;
             grid-column: 5;
             position: absolute;
         }
+
         .background_box {
             grid-row: 2;
             grid-column: 1;
@@ -160,8 +184,8 @@ main {
 }
 @media screen and (max-width: $mobile) {
     main {
+        // notebook pushed to left and form centrally positioned by moving 35% from the right
         max-width: 100vw;
-        overflow:hidden;
         .notebook {
             right:35%;
         }

@@ -42,7 +42,7 @@ nav .navbar-logo .title {
   justify-content: flex-end;
 }
 nav .navbar-logo:hover {
-  background: #664b45 !important;
+  background: #664b45;
   cursor: pointer;
 }
 nav .nav-list {

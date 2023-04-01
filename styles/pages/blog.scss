@@ -8,6 +8,7 @@
     @include page_layout();
 }
 
+// main element wrap top to bottom centrally spaced
 main {
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,7 +18,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 
-    
+    // blog post elements broken into 10 x 10 grids for ease of formating
     .blog_post_cont {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -28,7 +29,7 @@ main {
         margin:24px;
         transition: .4s;
 
-
+        // blog posts expand when hovered, transform:scale prevents neighbouring elements being moved
         &:hover{
             transform: scale(1.05);
             cursor: pointer;
@@ -37,7 +38,7 @@ main {
             }
         }
 
-
+        // blog images are positioned full width of the blog post element
         .blog_img {
             position:relative;
             grid-row: 4 / span 2;
@@ -49,7 +50,7 @@ main {
                 width: 100%
             }
         }
-
+        // blog_post div forms the brown background box sitting behind the image
         .blog_post {
             position:relative;
             grid-column:2 / span 8;
@@ -79,6 +80,7 @@ main {
 }
 
 @media screen and (max-width: $tablet) {
+    // blog post elemens shrink slightly to maintain 2 per line across whole breakpoint
     main .blog_post_cont {
         width: 300px;
         height: 250px;
@@ -87,6 +89,7 @@ main {
 }
 
 @media screen and (max-width: $mobile) {
+    // blog posts grow again to fill a larger width as only 1 will be displayed per line
     main .blog_post_cont {
         width: 320px;
         height: 180px;

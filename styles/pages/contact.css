@@ -42,7 +42,7 @@ nav .navbar-logo .title {
   justify-content: flex-end;
 }
 nav .navbar-logo:hover {
-  background: #664b45 !important;
+  background: #664b45;
   cursor: pointer;
 }
 nav .nav-list {
@@ -389,7 +389,6 @@ main .notebook .form_cont .send_button #send:hover {
 @media screen and (max-width: 630px) {
   main {
     max-width: 100vw;
-    overflow: hidden;
   }
   main .notebook {
     right: 35%;

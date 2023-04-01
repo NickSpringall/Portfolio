@@ -5,7 +5,7 @@
 * {
     @include primary_background();
 }
-  
+    // flex display justified space-between seperates navbar logo on left from nav items on right
     nav {
     display: flex;
     justify-content: space-between;
@@ -14,6 +14,7 @@
     line-height: 75px;
     background: $primary-background;
 
+    // grid display used to seperate name and title
     .navbar-logo {
         color: $sec_text;
         font-weight: bold;
@@ -41,11 +42,12 @@
         }
 
         &:hover {
-            background: $hover !important;
+            background: $hover;
             cursor: pointer; 
         }
     }
 
+    
     .nav-list {
         display: flex;
 
@@ -69,10 +71,13 @@
 }
 
 @media screen and (max-width: $tablet) {
+    // padding lowered to be equal to font size for tablet 
     nav {
         padding: 0 1rem;
 
+        // font-sizes made smaller to accomodate nav items over smaller navbar width
         .navbar-logo {
+
             .name {
                 font-size: 18px;
             }
@@ -91,12 +96,14 @@
     nav {
         padding: 0 0;
 
+        // navbar-logo z-indexed to be at top, above the list cover
         .navbar-logo {
             z-index: 3;
             position: relative;
             left: 10%;
         }
 
+        // list cover makes bottom (contact page link) of menu hidden when toggled off screen. Z-index above nav list and below list cover
         .list_cover {
             display: grid;
             position: absolute;
@@ -105,7 +112,8 @@
             height: 75px;
             width: 100%;
         }
-
+        
+        // when navbar-toggler is disengaged, menu moves up on Y axis 100% behind list cover
         .nav-list {
             display: grid; 
             position: absolute;
@@ -129,6 +137,8 @@
                 color: $primary-background;
             }
         }
+
+        // toggler z-indexed above list cover, grid display creates 3 even spans for toggler icon
         .navbar-toggler {
                 display: grid;
                 z-index: 3;
@@ -136,21 +146,27 @@
                 height: min-content;
                 cursor: pointer;
                 margin: 18px 30px 0 0;
-                    .bar {
-                        width: 40px;
-                        height: 5px;
-                        margin-bottom: 10px;
-                        background: $sec_text;
-                        border-radius: 10%;
-                        transition: .4s;
-                    }
+
+                // toggler icon lines
+                .bar {
+                    width: 40px;
+                    height: 5px;
+                    margin-bottom: 10px;
+                    background: $sec_text;
+                    border-radius: 10%;
+                    transition: .4s;
+                }
             }
         }
 
     input:checked ~ nav {
+
+        // checkbox checked moves the menu into it's visable 'home' position
         .nav-list {
             transform: translateY(0);
         }
+
+        // checkbox check animation to create cross icon. 1st and 3rd bar rotate 45 degrees and centre one disappears
         .navbar-toggler {
             margin-top: 35px;
             .bar:nth-child(1) {
