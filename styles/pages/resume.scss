@@ -35,10 +35,15 @@ main {
 
 @media screen and (max-width: $tablet) {
 
+    main {
+        max-width: 100vw;
 
-    .resume_cont {
-        img {
-            min-width:100%;
+        .resume {
+        padding:12px;
+
+            img {
+                width:100%;
+            }
         }
     }
 }

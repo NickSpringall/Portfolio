@@ -258,7 +258,13 @@ main a .contact_btn {
 }
 
 @media screen and (max-width: 1000px) {
-  .resume_cont img {
-    min-width: 100%;
+  main {
+    max-width: 100vw;
+  }
+  main .resume {
+    padding: 12px;
+  }
+  main .resume img {
+    width: 100%;
   }
 }/*# sourceMappingURL=resume.css.map */
